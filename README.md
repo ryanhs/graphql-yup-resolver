@@ -1,5 +1,7 @@
 # graphql-yup-resolver
 
+![npm](https://img.shields.io/npm/v/graphql-yup-resolver)  ![node-current](https://img.shields.io/node/v/graphql-yup-resolver)  [![Build Status](https://travis-ci.com/ryanhs/graphql-yup-resolver.svg?branch=master)](https://travis-ci.com/ryanhs/graphql-yup-resolver)  [![Coverage Status](https://coveralls.io/repos/github/ryanhs/graphql-yup-resolver/badge.svg?branch=master)](https://coveralls.io/github/ryanhs/graphql-yup-resolver?branch=master)  
+
 yeah graphql have scalars, but? but?
 
 
