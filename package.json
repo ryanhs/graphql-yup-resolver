@@ -27,5 +27,9 @@
     "test": "jest --coverage *.test.js",
     "lint": "eslint *.js --fix && echo '✔  Your .js files look good.'",
     "coveralls:push": "cat ./coverage/lcov.info | coveralls"
-  }
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ]
 }
