@@ -1,6 +1,6 @@
 {
   "name": "graphql-yup-resolver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "create graphql resolver with yup",
   "main": "index.js",
   "repository": "https://github.com/ryanhs/graphql-yup-resolver",
