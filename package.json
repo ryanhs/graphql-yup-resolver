@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "flaverr": "^1.10.0",
-    "yup": "0.31.1"
+    "yup": "0.32.0"
   },
   "engines": {
     "node": ">=8.11"
