@@ -44,6 +44,11 @@ const fn = createYupResolver({
 ```
 
 
+## Build Targets
+
+> [Node-Target-Mapping](https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping)  
+> Current build focused to node 10
+
 ## LICENSE
 
 -

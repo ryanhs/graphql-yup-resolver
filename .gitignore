@@ -9,6 +9,7 @@ nbproject
 *.iml
 .vscode
 .node_history
+.tsbuildinfo
 dump.rdb
 coverage
 
@@ -18,3 +19,5 @@ lib-cov
 *.log
 *.out
 *.pid
+dist
+coverage
