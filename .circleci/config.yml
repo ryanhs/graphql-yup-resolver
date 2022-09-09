@@ -4,14 +4,14 @@ orbs:
 
 jobs:
   build:
-    docker:
-      - image: cimg/base:stable
+    executor: node/default
     steps:
       - checkout
-      - node/install:
-          install-yarn: true
-          node-version: '16.17'
-      - run: node --version
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          command: node --version
+          name: Run tests
 
 workflows:
   cicd:
