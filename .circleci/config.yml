@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: |
-        node --version
+          node --version
 
 workflows:
   cicd:
