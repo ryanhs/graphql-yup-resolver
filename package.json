@@ -1,6 +1,6 @@
 {
   "name": "graphql-yup-resolver",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "create graphql resolver with yup",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
