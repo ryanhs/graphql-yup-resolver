@@ -5,10 +5,8 @@ jobs:
       - image: cimg/node:12.22.12
     steps:
       - checkout
-      - run: |
-        node --version
-
-workflows:
-  cicd:
-    jobs:
-      - build
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json"}}
+      - run:
+          name: check version
+          command: node -v
