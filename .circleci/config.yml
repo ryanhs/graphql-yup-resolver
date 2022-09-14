@@ -1,12 +1,19 @@
 version: 2.1
+orbs:
+  node: circleci/node@5.0.2
+
 jobs:
   build:
-    docker:
-      - image: cimg/node:12.22.12
+    executor: node/default
     steps:
       - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json"}}
+      - node/install-packages:
+          pkg-manager: yarn
       - run:
-          name: check version
-          command: node -v
+          command: node --version
+          name: Run tests
+
+workflows:
+  cicd:
+    jobs:
+      - build
