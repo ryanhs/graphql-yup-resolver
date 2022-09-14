@@ -46,6 +46,34 @@ const fn = createYupResolver({
 
 ```
 
+## Usage Example (using typescript)
+
+```typescript
+/* src/index.ts */
+
+import Pino from 'pino';
+import makeResolver from "graphql-yup-resolver";
+import { isConstructorDeclaration } from "typescript";
+import * as yup from 'yup';
+
+const logger = Pino({
+  transport: {
+    target: "pino-pretty",
+  },
+});
+
+const hello = makeResolver({
+  args: { name: yup.string() },
+  resolver: (_: any, { name }: { name: string }) => `hello ${name}!`,
+});
+
+(async () => {
+  const result = await hello({}, { name: "ryan" });
+  logger.info(result); // just dump to console the result
+})();
+
+```
+
 
 ## Build Targets
 
