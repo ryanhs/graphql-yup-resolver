@@ -2,36 +2,46 @@
   "name": "graphql-yup-resolver",
   "version": "1.0.4",
   "description": "create graphql resolver with yup",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/ryanhs/graphql-yup-resolver",
   "author": "ryanhs <mr.ryansilalahi@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "coveralls": "3.1.0",
-    "eslint": "7.19.0",
-    "eslint-config-airbnb-base": "14.2.1",
-    "eslint-config-prettier": "6.15.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jest": "23.20.0",
-    "eslint-plugin-prettier": "3.3.1",
-    "jest": "26.6.3",
-    "prettier": "2.2.1"
-  },
-  "dependencies": {
-    "flaverr": "^1.10.0",
-    "yup": "0.32.8"
+    "@types/jest": "^29.0.0",
+    "@types/node": "^18.7.16",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "graphql": "^16.6.0",
+    "graphql-tools": "^8.3.5",
+    "jest": "28.1.3",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "source-map-support": "^0.5.21",
+    "ts-jest": "^28.0.8",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.2",
+    "yup": "^0.32.11"
   },
   "engines": {
-    "node": ">=8.11"
+    "node": ">=10.22"
   },
   "scripts": {
-    "start": "npm run lint && jest --watch *.test.js",
-    "test": "jest --coverage *.test.js",
-    "lint": "eslint *.js --fix && echo '✔  Your .js files look good.'",
+    "build": "yarn rimraf dist/ && yarn tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "coveralls:push": "cat ./coverage/lcov.info | coveralls"
   },
   "files": [
-    "index.js",
+    "/dist",
     "README.md"
   ]
 }
