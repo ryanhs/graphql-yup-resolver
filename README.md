@@ -1,6 +1,6 @@
 # graphql-yup-resolver
 
-![npm](https://img.shields.io/npm/v/graphql-yup-resolver)  ![node-current](https://img.shields.io/node/v/graphql-yup-resolver)  [![CircleCI](https://dl.circleci.com/status-badge/img/gh/ryanhs/graphql-yup-resolver/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ryanhs/graphql-yup-resolver/tree/master)  [![Coverage Status](https://coveralls.io/repos/github/ryanhs/graphql-yup-resolver/badge.svg?branch=master)](https://coveralls.io/github/ryanhs/graphql-yup-resolver?branch=master)  
+![npm](https://img.shields.io/npm/v/graphql-yup-resolver)  ![node-current](https://img.shields.io/node/v/graphql-yup-resolver)  [![CircleCI](https://dl.circleci.com/status-badge/img/gh/ryanhs/graphql-yup-resolver/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/ryanhs/graphql-yup-resolver/tree/master)  [![Coverage Status](https://coveralls.io/repos/github/ryanhs/graphql-yup-resolver/badge.svg?branch=master)](https://coveralls.io/github/ryanhs/graphql-yup-resolver?branch=master)  
 
 yeah graphql have scalars, but? but?
 
